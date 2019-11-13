@@ -1,0 +1,9 @@
+<h1>People</h1>
+<button><%= link_to 'New Person', new_person_path %></button>
+
+
+<% @people.each do |p| %>
+    <h4><%= link_to p.full_name, person_path(p.id) %><h4>
+<% end %>
+
+

@@ -3,7 +3,8 @@
 <h4>Hair color: <%= @person.hair_color %></h4>
 <h4>Eye color: <%= @person.eye_color %></h4>
 <h4>Gender: <%= @person.gender %></h4>
-<h4>Alive: <%= @person.alive %>
+<h4>Alive: <%= @person.alive %></h4>
+<h4>Notes: <%= @person.notes.body %></h4>
 
 <ul>
     <li><%= link_to 'Edit Person', edit_person_path(@person) %></li>
